@@ -118,19 +118,12 @@
         var textLeft1 = 0;
         var textLeft2 = -10;
         var loop = function () {
-            //设置字体填充颜色
             ctx.fillStyle = "pink";
-            //设置字体样式
             ctx.font = "48px 楷体";
             ctx.fillText("Em thích cô 💕 ", 460, 120);
-
             ctx.font = "26px 楷体";
-
-            //从坐标点(50,50)开始绘制文字
             var mLeft = 50;
             var mTop = 250;
-
-            //左侧文字
             var n = -Math.cos(time);
             pulse((1 + n) * .5, (1 + n) * .5);
             time += ((Math.sin(time)) < 0 ? 9 : (n > 0.8) ? .2 : 1) * config.timeDelta;
